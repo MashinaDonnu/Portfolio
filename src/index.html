@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-nav">
+                <div class="container">
+                    <div class="header-body">
+                        <h1 class="header-logo"><span class="orange">< DZ /></span></h1>
+                        <div class="header-burger">
+                            <span></span>
+                        </div>
+                        <nav class="navigation">
+                            <menu>
+                                <li><a href="#about">О себе</a></li>
+                                <li><a href="#skills">Навыки</a></li>
+                                <li><a href="#projects">Проекты</a></li>
+                                <li><a href="#" class="contacts">Контакты</a></li>
+                            </menu>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="img-wrapp">
+                <div class="header-text">
+                    <h2>Загатин Дмитрий</h2>
+                    <h3><span class="orange">Frontend developer</span></h3>
+                    <a class="btn-big" href="https://github.com/MashinaDonnu?tab=repositories" target="_blank">Github</a>
+                </div>
+                <div class="img-blur"></div>
+                <div class="header-img"></div>
+            </div>
+        </header>
+        <main class="content">
+                <section id="about">
+                        <h1 class="section-title">О себе</h1>
+                    <div class="section-content">
+                        <div class="container">
+                            <div class="about-content">
+                                <div class="about-img">
+                                    <img src="images/me.jpg" alt="">
+                                </div>
+                                <div class="about-text">
+                                    <p><strong>ФИО:</strong> Загатин Дмитрий Александрович.</p>
+                                    <p><strong>Возраст:</strong> 21 год.</p>
+                                    <p><strong>Родной город:</strong> Винница.</p>
+                                    <p>
+                                        <strong>Образование:</strong>
+                                        Закончил <a href="https://www.donnu.edu.ua/uk/pro-universitet/" target="_blank">Донецкий национальный университет им. Василия Стуса</a>(бакалавр) по специальности "Компъютерные науки и информационные технологии".
+                                    </p>
+                                    <p><strong>Опыт работы:</strong> Летом, 2019 года, прошел стажировку в компании
+                                        <a href="https://www.linkedin.com/company/raccoonllc/people/" target="_blank">Raccoon LLC</a> 2.5 месяца на позиции JavaScript backend разработчика под платфоруму
+                                        <a href="http://www.salesforce.com/" target="_blank">SalesForce</a>.
+                                    </p>
+                                    <h4>Кратко о себе</h4>
+                                    <p>В свободное время практикуюсь с Frontend, посещаю тренажерный зал, играю на гитаре, смотрю трансляции блогеров-программистов :)</p>
+                                    <p>Стремлюсь всегда развивать свои навыки как в разработке, так и в дургих своих увлечениях. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="skills">
+                    <h1 class="section-title">Навыки</h1>
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="skills-content">
+                                <img src="images/stack.jpg" alt="stack image" class="stack-image">
+                                <ul class="skills-list">
+                                    <li>HTML5, CSS3, SASS, LESS.</li>
+                                    <li>JavaScript(ES6+, OOP, Patterns).</li>
+                                    <li>React, Redux, React-hooks.</li>
+                                    <li>NodeJS, Express.</li>
+                                    <li>TypeScript.</li>
+                                    <li>Webpack.</li>
+                                    <li>Git.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="projects">
+                        <h1 class="section-title">Мои последние проекты</h1>
+                    <div class="section-content">
+                        <div class="container">
+                            <div class="projects-wrapp">
+                                <div class="project">
+                                    <img src="images/excel2.png" alt="excel">
+                                    <div class="description">
+                                        <h4>Excel на JavaScript, SCSS, Webpack</h4>
+                                        <p>Курс по созданию Excel с базовым функционалом c применением паттернов.
+                                            В процессе прохождения этого курса был создан Excel с таким функционалом как:
+                                            изменение размеров столбцов и строчек, связывание компонента формулы и ячеек, базовые функции редактирования текста, базовые математические операци,
+                                            роутинг(SPA), создание и сохранение множества таблиц, удаление таблиц.
+                                        </p>
+                                        <p>
+                                            Создана небольшая библиотека(в стиле Jquery) собственный "фреймворк", состояние для каждой таблицы(аналог Redux), так же сохраниние его в LocalStorage.
+                                        </p>
+                                        <p>Я получил море практики и понимание того как проектируются приложения на чистом JS.</p>
+                                        <div class="btn-group">
+                                            <a href="http://zahatin-excel.site/" target="_blank">Перейти к проекту</a>
+                                            <a href="https://github.com/MashinaDonnu/excel-course" target="_blank">Github</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project">
+                                    <img src="images/blog.png" alt="blog">
+                                    <div class="description">
+                                        <h4>Blog-app MERN</h4>
+                                        <p>FullStack Приложение-блог на стеке MERN(MongoDB, Express, React, NodeJS) + библиотека ReactBootstrap.</p>
+                                        <p>В процессе создания приложения была реализована авторизация, страница пользователя, возможность добавления,
+                                            редактирования, удаления постов, валидация на backend, динамический поиск.
+                                        </p>
+                                        <p>Я научился основам работы с бд MongoDB, Mongoose, получил практику по React-hooks, понял как связывается frontend и backend в этом стеке.</p>
+                                        <div class="btn-group">
+                                            <a href="http://zahatin.site/" target="_blank">Перейти к проекту</a>
+                                            <a href="https://github.com/MashinaDonnu/Blog_App_MERN" target="_blank">Github</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project">
+                                    <img src="images/star_db.png" alt="starDB">
+                                    <div class="description">
+                                        <h4>StarDB на React + Redux</h4>
+                                        <p>Задачей данного приложения является отображение информации о персонажах, рассах и планетах из фильма "Star Wars".</p>
+                                        <p>В качестве источника данных я использовал API <a href="https://swapi.dev/">SWAPI</a>.</p>
+                                        <p>В процессе реализации приложения я получил практику работы с API, ООП в React и Redux.</p>
+                                        <div class="btn-group">
+                                            <a href="http://zahatin-sw.site/" target="_blank">Перейти к проекту</a>
+                                            <a href="https://github.com/MashinaDonnu/Star_DB" target="_blank">Github</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project">
+                                    <img src="images/portfolio.png" alt="portfolio">
+                                    <div class="description">
+                                        <h4>Сайт-портфолио на HTML, CSS, JS</h4>
+                                        <div class="btn-group once">
+                                            <a href="">Github</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </main>
+        <footer>
+            <h2 class="footer-title">Контакты</h2>
+            <div class="container">
+                <div class="footer-info">
+                    <div class="footer-info-item">
+                        <h3>Соц. сети</h3>
+                        <div class="footer-links">
+                            <a href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%B7%D0%B0%D0%B3%D0%B0%D1%82%D0%B8%D0%BD-7a9846188" target="_blank"><img src="images/iconfinder_linkedin-logo-1_1269935.png" alt="linkedin"></a>
+                            <a href="https://www.instagram.com/dmitriy_zahatin/" target="_blank"><img src="images/iconfinder_Rounded_Instagram_svg_5282544.png" alt=""></a>
+                            <a href="https://www.facebook.com/profile.php?id=100017188752945" target="_blank"><img src="images/iconfinder_Rounded_Facebook_svg_5282541.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footer-info-item">
+                        <h3>Почта / Skype</h3>
+                        <div class="footer-links">
+                            <a href="mailto:zagatin999@gmail.com" target="_blank"><img src="images/iconfinder_gmail_326520.png" alt=""></a>
+                            <a href="skype:zagatin999@gmail.com" target="_blank"><img src="images/iconfinder_skype-logo_1269913.png" alt=""></a>
+                        </div>
+                            <a href="mailto:zagatin999@gmail.com" class="down">zagatin999@gmail.com</a>
+                    </div>
+                    <div class="footer-info-item">
+                        <h3>Месенджеры</h3>
+                        <div class="footer-links">
+                            <a href="tel:+380930172658"><img src="images/iconfinder_Telegram_4490637.png" alt=""></a>
+                            <a href="tel:+380930172658"><img src="images/iconfinder_64-viber_1181187.png" alt=""></a>
+                        </div>
+                        <a href="tel:+380930172658" class="down">+380930172658</a>
+                    </div>
+                  </div>
+                </div>
+        </footer>
+    </div>
+    <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

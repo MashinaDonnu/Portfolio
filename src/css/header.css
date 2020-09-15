@@ -1,0 +1,277 @@
+.header-nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background: #202751;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+
+.header-logo {
+    color: #fff;
+}
+
+.navigation menu {
+    display: flex;
+}
+
+.navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.navigation menu li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.navigation menu li a:hover {
+    transition: all ease-in-out .4s;
+    color: orangered;
+    padding-bottom: 3px;
+    /*border-bottom: 1px solid orangered;*/
+}
+
+.header-burger {
+    display: none;
+}
+
+.content {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.img-wrapp {
+    margin-top: 70px;
+    width: 100%;
+    height: 850px;
+    position: relative;
+    z-index: 10;
+}
+.header-img {
+    width: 100%;
+    height: 100%;
+    background: url("https://www.it-courses.by/wp-content/uploads/2018/06/20-Most-Common-Work-from-Home-Job-Titles.jpg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.img-blur {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 2;
+}
+
+.header-text {
+    position: absolute;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 230px;
+}
+
+.header-text h2,h3 {
+    color: #fff;
+}
+
+.header-text h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.header-text h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.btn-big {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 0;
+    border: 1px solid #ccc;
+    width: 250px;
+    background: #202751;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    border-radius: 4px;
+}
+.btn-big:hover {
+    transition: background-color ease .5s;
+    background: transparent;
+}
+
+/*--------------------------*/
+
+@media screen and (max-width: 1024px){
+    .img-wrapp {
+        height: 600px;
+    }
+    .header-text {
+        padding-top: 200px;
+    }
+    .header-text h2 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .header-text h3 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-burger {
+        display: block;
+        position: relative;
+        height: 20px;
+        width: 30px;
+    }
+
+    .header-burger:before, .header-burger:after {
+        content: '';
+        background: #fff;
+        height: 2px;
+        position: absolute;
+        width: 100%;
+        transition: all ease-in-out .3s;
+    }
+    .header-burger:before {
+        top: 0;
+    }
+    .header-burger:after {
+        bottom: 0;
+    }
+    .header-burger>span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        top: 9px;
+        transition: all ease-in-out .3s;
+    }
+    .header-burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+        transition: all ease-in-out .3s;
+    }
+    .header-burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+        transition: all ease-in-out .3s;
+    }
+    .header-burger.active>span {
+        transform: scale(0);
+        transition: all ease-in-out .3s;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: -45%;
+        height: 100%;
+        width: 45%;
+        background: rgba(0, 0, 0, .9);
+        z-index: 3;
+        transition: left ease-in-out .4s;
+    }
+
+    .navigation.active {
+        left: 0;
+    }
+
+    .navigation menu {
+        width: 100%;
+        flex-direction: column;
+        padding-top: 4rem;
+        align-items: center;
+    }
+
+    .navigation menu li {
+        margin-bottom: 20px;
+        width: 130px;
+    }
+    .navigation menu li a {
+        font-size: 24px;
+    }
+
+    .header-body {
+        height: 60px;
+    }
+
+    .img-wrapp {
+        margin-top: 60px;
+        height: 350px;
+    }
+    .header-text {
+        padding-top: 100px;
+    }
+    .header-text h2 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .header-text h3 {
+        font-size: 25px;
+    }
+
+    .btn-big {
+        width: 200px;
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .navigation {
+        left: -60%;
+        width: 60%;
+    }
+    .navigation menu li a {
+        font-size: 18px;
+    }
+    .img-wrapp {
+        height: 250px;
+    }
+    .header-text {
+        padding-top: 50px;
+    }
+    .header-text h2 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .header-text h3 {
+        font-size: 20px;
+    }
+    .btn-big {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .header-logo {
+        font-size: 24px;
+    }
+
+}
+

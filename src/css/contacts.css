@@ -1,0 +1,38 @@
+.contacts-list {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    font-size: 22px;
+    padding: 15px 0;
+    justify-content: space-between;
+}
+
+.contact-item strong{
+    padding-right: 5px;
+}
+
+.soc {
+    border-top: 1px solid #ccc;
+}
+.soc a {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 540px){
+    .contact-item {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .contact-item.soc {
+        margin:0 10px;
+        flex-wrap: wrap;
+    }
+}

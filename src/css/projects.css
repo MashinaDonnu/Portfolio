@@ -1,0 +1,144 @@
+.projects-wrapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+
+}
+
+.project img {
+    width: 35%;
+    height: 220px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.project h4 {
+    padding: 10px 0;
+}
+
+.project .description {
+    width: 60%;
+}
+
+.project .description p {
+    text-align: justify;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.once {
+    justify-content: flex-start;
+}
+
+.btn-group a {
+    margin-left: 20px;
+    width: 200px;
+    padding: 10px 0;
+    background: #202751;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.btn-group a:hover {
+    transition: all ease-in-out .4s;
+    color: orangered;
+}
+
+.btn-group a:first-child {
+    background: orangered;
+}
+.btn-group a:first-child:hover {
+    color: #202751;
+}
+
+
+
+@media screen and (max-width: 1370px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project h4 {
+        text-align: center;
+    }
+    .once {
+        justify-content: center;
+    }
+    .project img {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .project .description {
+        width: 90%;
+        /*width: 500px;*/
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .project img {
+        width: 90%;
+    }
+    .project .description p {
+        font-size: 16px;
+    }
+    .btn-group a {
+        width: 170px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .project img {
+        width: 99%;
+    }
+    .project .description {
+        width: 99%;
+    }
+    .btn-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .btn-group a {
+        width: 140px;
+        padding: 10px 15px;
+        font-size: 16px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .btn-group a {
+        /*width: 100px;*/
+        padding: 10px 15px;
+        font-size: 16px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-group a {
+        width: 80%;
+        margin: 5px 0;
+    }
+}

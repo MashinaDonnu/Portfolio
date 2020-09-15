@@ -1,0 +1,87 @@
+@import "modal.css";
+@import "contacts.css";
+@import "header.css";
+@import "about.css";
+@import "projects.css";
+@import "skills.css";
+@import "footer.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #3F3F3F;
+}
+
+html, body {
+    height: 100%;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.container {
+    width: 87%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.orange {
+    color: orangered;
+}
+
+.content {
+    /*margin-top: 50px;*/
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 350px;
+}
+
+.section-title {
+    width: 100%;
+    padding: 40px 0;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    background: #202751;
+}
+
+.section-content {
+    padding: 30px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 40px;
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .content {
+        padding-bottom: 500px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .container {
+        width: 95%;
+    }
+    .section-title {
+        font-size: 28px;
+        padding: 15px 0;
+    }
+    .section-content {
+        padding: 10px 0;
+    }
+}
