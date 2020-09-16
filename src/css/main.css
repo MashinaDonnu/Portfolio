@@ -49,10 +49,10 @@ section {
 
 .section-title {
     width: 100%;
-    padding: 40px 0;
-    font-size: 50px;
+    padding: 25px 0;
+    font-size: 40px;
     text-align: center;
-    color: #fff;
+    color: #ccc;
     background: #202751;
 }
 

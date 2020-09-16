@@ -2,25 +2,30 @@
     border-top: 1px solid #ccc;
 }
 #about .about-content {
-    margin-top: 50px;
+    margin: 10px auto;
     display: flex;
     justify-content: space-around;
 }
 
 .about-img,.about-text {
-    width: 46%;
+    width: 70%;
+}
+
+.about-img {
+    width: 40%;
 }
 
 .about-img img {
+    display: block;
     border-radius: 12px;
-    width: 75%;
+    width: 90%;
 }
 
 .about-text p {
-    line-height: 28px;
-    font-size: 22px;
-    margin-top: 20px;
-    text-align: justify;
+    line-height: 25px;
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: left;
 }
 
 .about-text a {
@@ -28,7 +33,7 @@
 }
 
 .about-text h4 {
-    font-size: 30px;
+    font-size: 26px;
     padding: 20px 0;
     border-bottom: 1px solid #ccc;
 }
@@ -42,7 +47,7 @@
 
 @media screen and (max-width: 1024px){
     .about-text p {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -57,6 +62,9 @@
         display: block;
         margin: 0 auto;
         width: 70%;
+    }
+    .about-text p {
+        text-align: left;
     }
     .about-text {
         width: 100%;
