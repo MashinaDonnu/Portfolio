@@ -32,7 +32,7 @@
 }
 
 .project .description p {
-    text-align: justify;
+    text-align: left;
 }
 
 .btn-group {
@@ -56,7 +56,8 @@
 }
 .btn-group a:hover {
     transition: all ease-in-out .4s;
-    color: orangered;
+    /*color: orangered;*/
+    color: #CC302E;
 }
 
 .btn-group a:first-child {
